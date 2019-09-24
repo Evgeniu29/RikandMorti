@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Рик и Морти</string>
+    <string name="test">Тест</string>
+    <string name="id">ID:</string>
+    <string name="title">Название:</string>
+    <string name="content">Содержание:</string>
+    <string name="name">Имя:</string>
+    <string name="status">Статус:</string>
+    <string name="description">Описание:</string>
+    <string name="type">Тип:</string>
+    <string name="gender">Пол:</string>
+    <string name="origin">Происхождение:</string>
+    <string name="url">URL:</string>
+    <string name="location">Месторасположение:</string>
+
+    <string-array name="sort_list">
+        <item>По алфавиту</item>
+    </string-array>
+
+</resources>

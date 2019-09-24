@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_toRightOf="@+id/tvId"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp" />
+
+
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvId"
+        android:layout_marginTop="9dp"
+        android:text="@string/status"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test"
+        android:layout_toRightOf="@id/tvStatus"
+        android:layout_below="@id/id"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"/>
+
+
+
+    <TextView
+        android:id="@+id/tvSpecies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvStatus"
+        android:layout_marginTop="9dp"
+        android:text="@string/description"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/species"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test"
+        android:layout_toRightOf="@id/tvSpecies"
+        android:layout_below="@id/status"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSpecies"
+        android:layout_marginTop="9dp"
+        android:text="@string/type"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test"
+        android:layout_toRightOf="@id/tvType"
+        android:layout_below="@id/species"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvType"
+        android:layout_marginTop="9dp"
+        android:text="@string/gender"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/test"
+        android:layout_toRightOf="@id/tvGender"
+        android:layout_below="@id/type"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_below="@+id/tvGender"
+        android:layout_marginTop="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
