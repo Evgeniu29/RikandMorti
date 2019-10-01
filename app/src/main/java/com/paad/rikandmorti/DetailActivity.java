@@ -11,8 +11,8 @@ import com.bumptech.glide.Glide;
 import com.paad.rikandmorti.API.Result;
 
 import java.io.Serializable;
-
-
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class DetailActivity extends Activity implements Serializable {
@@ -26,6 +26,10 @@ public class DetailActivity extends Activity implements Serializable {
     TextView type;
 
     TextView gender;
+
+    TextView locationName;
+
+    TextView originName;
 
     ImageView image;
 
@@ -42,6 +46,9 @@ public class DetailActivity extends Activity implements Serializable {
         species = (TextView) findViewById(R.id.species);
         type = (TextView) findViewById(R.id.type);
         gender = (TextView) findViewById(R.id.gender);
+        locationName = (TextView) findViewById(R.id.locationName);
+        originName = (TextView) findViewById(R.id.originName);
+
         image = (ImageView) findViewById(R.id.ivImage);
 
         Intent intent = getIntent();
@@ -58,6 +65,10 @@ public class DetailActivity extends Activity implements Serializable {
         type.setText(extra.getType());
 
         gender.setText(extra.getGender());
+
+        locationName.setText(Singltone.getInstance().characterList.get(extra.getId()).getLocation().getName());
+
+        originName.setText(Singltone.getInstance().characterList.get(extra.getId()).getOrigin().getName());
 
         Glide.with(this).load(extra.getImage())
                 .into(image);

@@ -1,11 +1,14 @@
 package com.paad.rikandmorti.API;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
 
-public class Origin {
+public class Origin  {
     @SerializedName("name")
     @Expose
     private String name;
@@ -28,4 +31,5 @@ public class Origin {
     public void setUrl(String url) {
         this.url = url;
     }
+
 }

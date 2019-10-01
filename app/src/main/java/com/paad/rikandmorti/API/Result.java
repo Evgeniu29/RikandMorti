@@ -168,6 +168,10 @@ public class Result implements Parcelable {
         dest.writeString(getSpecies());
         dest.writeString(getType());
         dest.writeString(getImage());
+        dest.writeString(getLocation().getName());
+        dest.writeString(getLocation().getUrl());
+
+
 
     }
 
@@ -178,6 +182,7 @@ public class Result implements Parcelable {
         species = parcel.readString();
         type = parcel.readString();
         image = parcel.readString();
+
     }
 
     public static final Parcelable.Creator<Result> CREATOR = new Parcelable.Creator<Result>() {

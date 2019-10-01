@@ -12,9 +12,10 @@
     <string name="origin">Происхождение:</string>
     <string name="url">URL:</string>
     <string name="location">Месторасположение:</string>
+    <string name="epizodes">Эпизоды:</string>
 
-    <string-array name="sort_list">
-        <item>По алфавиту</item>
-    </string-array>
+
+
+
 
 </resources>

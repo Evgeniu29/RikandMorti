@@ -7,7 +7,7 @@ import retrofit2.http.GET;
 
 public interface RetrofitService {
 
-        @GET("api/character/")
+        @GET("api/character")
 
         Call<Feed> getData();
     }

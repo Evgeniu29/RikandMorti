@@ -92,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
                 });
 
                 adapter = new CharacterAdapter(getApplicationContext(), result);
-
                 rvCharacters.setAdapter(null);
                 rvCharacters.setLayoutManager(null);
                 rvCharacters.setAdapter(adapter);
