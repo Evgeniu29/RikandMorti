@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:layout_margin="10dp"
     >
 
 
@@ -14,6 +13,8 @@
          android:id="@+id/button"
          android:layout_width="wrap_content"
          android:layout_height="30dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginLeft="15dp"
          android:text="Сортировка по алфавиту"
          android:textSize="8dp"
          android:background="@drawable/image"
@@ -25,7 +26,7 @@
         android:id="@+id/rv"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="@drawable/bg_gradient"
         />
 

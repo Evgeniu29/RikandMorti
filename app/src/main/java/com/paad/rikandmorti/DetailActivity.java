@@ -66,13 +66,14 @@ public class DetailActivity extends Activity implements Serializable {
 
         gender.setText(extra.getGender());
 
-        locationName.setText(Singltone.getInstance().characterList.get(extra.getId()).getLocation().getName());
+        int id =  extra.getId()-1;
 
-        originName.setText(Singltone.getInstance().characterList.get(extra.getId()).getOrigin().getName());
+        locationName.setText(Singltone.getInstance().characterList.get(id).getLocation().getName());
+
+        originName.setText(Singltone.getInstance().characterList.get(id).getOrigin().getName());
 
         Glide.with(this).load(extra.getImage())
                 .into(image);
-
 
     }
 }
